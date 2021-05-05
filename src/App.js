@@ -197,7 +197,6 @@ function Videos({ mode, callId, setPage }) {
     };
 
     const hangUp = async () => {
-        console.log("hangup");
         pc.close();
 
         if (roomId) {
