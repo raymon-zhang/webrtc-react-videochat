@@ -1,7 +1,5 @@
 import { useRef, useState } from "react";
 
-import Modal from "react-modal";
-
 import firebase from "firebase/app";
 import "firebase/firestore";
 
@@ -36,8 +34,6 @@ const servers = {
 };
 
 const pc = new RTCPeerConnection(servers);
-
-Modal.setAppElement("#root");
 
 function App() {
     const [currentPage, setCurrentPage] = useState("home");
